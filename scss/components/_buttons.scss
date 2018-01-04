@@ -1,0 +1,81 @@
+/* Buttons:
+    .btn--default
+    .btn--success
+    .btn--error
+    .btn--warning
+    .btn--info
+    .theme__colors
+ */
+
+
+	
+.btn {
+
+	&--default {
+
+		@extend %btn;
+		@extend %theme;
+		background-color: $secondary-color;
+
+	}
+
+	&--success {
+
+		@extend %btn;
+		@extend %theme;
+		background-color: $primary-color;
+
+	}
+
+	&--error {
+
+		@extend %btn;
+		@extend %theme;
+		background-color: crimson;
+
+	}
+
+	&--warning {
+
+		@extend %btn;
+		@extend %theme;
+		background-color: coral;
+
+	}
+
+	&--info {
+
+		@extend %btn;
+		@extend %theme;
+		background-color: mediumpurple;
+
+	}
+
+
+}
+
+
+.theme__colors {
+	
+	@extend %theme;
+
+}
+
+
+@include mq(large) {
+	
+	.grid__col--12 > [class^="btn"] {
+
+		width: 15%;
+
+	}
+
+}
+
+
+
+
+
+
+
+

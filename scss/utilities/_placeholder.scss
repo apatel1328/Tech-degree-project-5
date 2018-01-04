@@ -1,0 +1,25 @@
+%clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+%theme {
+	
+	@include margins-sm;
+	@include padding-sm;
+	width: auto;
+	border-radius: $border-rd;
+
+}
+
+
+%btn {
+	
+	@include margins-md;
+	text-transform: uppercase;
+	color: $font-color-secondary;
+
+}
+

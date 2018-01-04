@@ -1,0 +1,214 @@
+/* Grid:
+    .container
+    .grid__row
+    .grid__col--2
+    .grid__col--3
+    .grid__col--4
+    .grid__col--5
+    .grid__col--6
+    .grid__col--7
+    .grid__col--8
+    .grid__col--9
+    .grid__col--10
+    .grid__col--11
+    .grid__col--12
+    .centered
+    .theme__colors
+*/
+
+@include mq(small) {
+    
+    .container {
+    
+    width: 85%;
+    margin: auto;
+
+    }
+
+
+
+    .grid {
+
+        
+        &__row {
+
+            @include margins-bg;
+            @include flex;
+
+        }
+
+        &__col {
+
+            &--2.theme__colors {
+
+
+
+            }
+
+            &--3.theme__colors {
+
+                background-color: plum;
+
+            }
+
+            &--4.theme__colors {
+
+                background-color: $secondary-color;            
+
+            }
+
+            &--5.theme__colors {
+
+                background-color: mediumaquamarine;
+
+            }
+
+            &--6.theme__colors {
+
+                background-color: steelblue;
+
+            }
+
+            &--7.theme__colors {
+
+                background-color: lightcoral;
+
+            }
+
+            &--8.theme__colors {
+
+                background-color: coral;
+
+            }
+
+            &--9.theme__colors {
+
+                
+
+            }
+
+            &--10.theme__colors {
+
+                
+
+            }
+
+            &--11.theme__colors {
+
+                
+
+            }
+
+            &--12 {
+
+                @include flex;
+
+            }
+
+            &--12.theme__colors {
+
+                background-color: $primary-color;
+
+            }
+
+        }
+
+    }
+
+}
+
+@include mq(large) {
+    
+    .grid {
+
+
+
+        &__row {
+            @include flex-row;
+            justify-content: space-between;
+        }
+
+        &__col {
+
+            &--3 {
+
+                width: 22%;
+                text-align: center;
+
+            }
+
+
+            &--4 {
+
+                width: 30%;
+                text-align: center;
+
+            }
+
+            &--5 {
+
+                width: 30%;
+                text-align: center;
+
+            }
+
+
+            &--6 {
+
+                width: 46%;
+                text-align: center;
+
+            }
+
+            &--7 {
+
+                width: 65%;
+                text-align:center;
+
+            }
+
+
+            &--7.centered {
+
+                margin:auto;
+                text-align:center;
+
+            }
+
+
+            &--8 {
+
+                width: 65%;
+
+
+            }
+
+
+            &--8.theme__colors {
+
+                text-align: center;
+
+            }
+
+
+            &--9 {
+
+                margin-left:auto;
+                align-self: center;
+
+            }
+
+
+            &--12 {
+
+                width: 100%;
+                flex-direction: row;
+                display: flex;
+                justify-content: space-around;
+
+            }
+
+
+        }
+    }
+}

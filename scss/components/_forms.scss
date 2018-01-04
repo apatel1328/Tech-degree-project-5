@@ -1,0 +1,31 @@
+/* Forms:
+    .form
+    .form__label--hidden
+    .form__input
+ */
+
+@include mq(small) {
+	
+	.form {
+	
+		@include flex;
+
+	}
+
+	.form__label--hidden {
+		
+		display: none;
+
+	}
+
+	.form__input {
+		
+		@include padding-sm;
+		@include margins-sm;
+		font-weight: $font-weight-heavy;
+		border: none;
+		border-bottom: 5px solid $primary-color;
+
+	}
+
+}

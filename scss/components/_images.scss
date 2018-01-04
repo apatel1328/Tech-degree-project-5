@@ -1,0 +1,31 @@
+/* Image:
+    .img--logo
+    .img--frame
+    .img--avatar
+*/
+
+@include mq(small) {
+	
+	[class^="img"] {
+	
+		@include img;
+		@include margins-bg;
+
+	}
+
+
+		
+	.img--frame {
+	
+		@include padding-sm;
+		border: $border-type;
+	
+	}
+
+	
+
+
+}
+
+
+

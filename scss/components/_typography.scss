@@ -1,0 +1,58 @@
+/* Typography:
+    .container
+    .link
+    .blockquote
+    .headline--primary
+    .headline--secondary
+*/
+
+
+@include mq(small) {
+	
+	.container {
+	
+		font-family: $font-stack;
+		color: $font-color;
+		
+	}
+
+	.link {
+		
+		color: $secondary-color;
+		font-weight: $font-weight-heavy;
+
+	}
+
+
+	.blockquote {
+		
+		font-size: $font-size-medium;
+		border-radius: $border-rd;
+		border-left: 10px solid $primary-color;
+		font-style: italic;
+		padding-left: 20px; 
+
+		
+
+	}
+
+	.headline--primary {
+		
+		font-weight: $font-weight-heavy;
+		color: $primary-color;
+		font-size: $font-size-large;
+		padding-left: 20px;
+		padding-right: 30px;
+
+	}
+
+	.headline--secondary {
+		
+		font-weight: $font-weight-light;
+		color: $font-color;
+		font-size: $font-size-standard;
+
+	}
+	
+}
+
