@@ -6,24 +6,11 @@
 
 }
 
-@include mq(small) {
-	ul {
+ul {
 	
-		@include flex;
-	    padding: 0;
-	    list-style-type: none;
-	
-	}
-}
+	list-style-type: none;
+	padding: 0;
 
-@include mq(large) {
-	
-	ul {
-
-		@include flex-row;
-		margin-right: 50px;
-
-	}
 }
 
 

@@ -1,4 +1,5 @@
 /* Navigation:
+	.nav
     .nav__item
 */
 
@@ -21,7 +22,6 @@
 		}
 
 
-
 		&:first-of-type {
 			
 			@extend .nav__item;
@@ -38,6 +38,27 @@
 	}
 
 }
+
+
+@include mq(small) {
+	.nav {
+	
+		@include flex;
+	    padding: 0;
+	
+	}
+}
+
+@include mq(large) {
+	
+	.nav {
+
+		@include flex-row;
+		margin-right: 50px;
+
+	}
+}
+
 
 
 
