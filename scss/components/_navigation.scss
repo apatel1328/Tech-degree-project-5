@@ -9,24 +9,38 @@
 		
 		@include flex;
 		@include margins-sm;
-		@include padding-sm;
+		@include padding-lg;
 		text-align: center;
-		width: 100%;
-
-		@include modifier(active) {
-		@extend .nav__item;
-		border-radius: $border-rd;
-		background-color: $primary-color;
+		font-size: $font-size-standard;
 
 		& > a {
-			color: $font-color-secondary;
-		}
+
+			color: $font-color;
+			text-decoration: none;
 
 		}
+
+
+
+		&:first-of-type {
+			
+			@extend .nav__item;
+			border-radius: $border-rd;
+			background-color: $primary-color;
+
+			& > a {
+				color: $font-color-secondary;
+			}
+
+		}
+
 
 	}
 
 }
+
+
+
 
 
 

@@ -22,6 +22,8 @@
     
     width: 85%;
     margin: auto;
+    color: $font-color;
+    text-decoration: none;
 
     }
 
@@ -39,15 +41,16 @@
 
         &__col {
 
-            &--2.theme__colors {
+            
 
+            &--2.theme__colors {
 
 
             }
 
             &--3.theme__colors {
 
-                background-color: plum;
+                background-color: #deb2ee;
 
             }
 
@@ -59,25 +62,33 @@
 
             &--5.theme__colors {
 
-                background-color: mediumaquamarine;
+                background-color: #88d9a0;
+
+            }
+
+
+            &--6 {
+
+                align-self: center;
 
             }
 
             &--6.theme__colors {
 
-                background-color: steelblue;
+                background-color: #3fabca;
+                align-self: auto;
 
             }
 
             &--7.theme__colors {
 
-                background-color: lightcoral;
+                background-color: #f28d8d;
 
             }
 
             &--8.theme__colors {
 
-                background-color: coral;
+                background-color: #ffa280;
 
             }
 
@@ -162,7 +173,7 @@
 
             &--7 {
 
-                width: 65%;
+                width: 63%;
                 text-align:center;
 
             }
@@ -178,7 +189,7 @@
 
             &--8 {
 
-                width: 65%;
+                width: 63%;
 
 
             }

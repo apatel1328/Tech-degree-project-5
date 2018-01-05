@@ -8,7 +8,7 @@
 %theme {
 	
 	@include margins-sm;
-	@include padding-sm;
+	@include padding-md;
 	width: auto;
 	border-radius: $border-rd;
 
@@ -18,8 +18,10 @@
 %btn {
 	
 	@include margins-md;
+	@include padding-md;
 	text-transform: uppercase;
 	color: $font-color-secondary;
+	border: none;
 
 }
 

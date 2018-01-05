@@ -9,6 +9,7 @@
 	.form {
 	
 		@include flex;
+		@include margins-bg;
 
 	}
 
@@ -21,7 +22,7 @@
 	.form__input {
 		
 		@include padding-sm;
-		@include margins-sm;
+		@include margins-md;
 		font-weight: $font-weight-heavy;
 		border: none;
 		border-bottom: 5px solid $primary-color;

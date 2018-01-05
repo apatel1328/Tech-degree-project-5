@@ -2,8 +2,7 @@
 
 * {
 
-	color: $font-color;
-	text-decoration: none;
+	
 
 }
 
@@ -18,9 +17,11 @@
 }
 
 @include mq(large) {
+	
 	ul {
 
 		@include flex-row;
+		margin-right: 50px;
 
 	}
 }
@@ -29,9 +30,11 @@
 
 p {
 	
+	@include margins-bg;
 	font-weight: $font-weight-normal;
 	font-size: $font-size-standard;
 	line-height: 1.3;
+
 
 }
 

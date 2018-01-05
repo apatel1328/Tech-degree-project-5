@@ -18,6 +18,7 @@
 	display: flex;
 	flex: auto;
 	flex-direction: column;
+	justify-content: space-around;
 }
 
 @mixin flex-row {
@@ -34,8 +35,8 @@
 
 @mixin margins-bg {
 	
-	margin-top: 25px;
-	margin-bottom: 25px;
+	margin-top: 45px;
+	margin-bottom: 45px;
 
 }
 
@@ -48,14 +49,26 @@
 
 @mixin margins-sm {
 	
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-top: 3px;
+	margin-bottom: 3px;
 
 }
 
 @mixin padding-sm {
 	
 	padding: 10px;
+
+}
+
+@mixin padding-md {
+	
+	padding: 15px;
+
+}
+
+@mixin padding-lg {
+	
+	padding:20px;
 
 }
 
